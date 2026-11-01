@@ -1416,7 +1416,7 @@ img.logo {
 }
 
 .service-body .icon-box{
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 }
 
 .service-body .icon-box img{
@@ -5361,7 +5361,7 @@ width: 100%;
 	}
 
 	.service-body .icon-box{
-		margin-bottom: 40px;
+		margin-bottom: 20px;
 	}
 
 	.service-readmore-btn{
@@ -5537,7 +5537,7 @@ width: 100%;
 	}
 
 	.fact-counter-item h2{
-		font-size: 34px;
+		font-size: 17px;
 		margin-bottom: 5px;
 	}
 
@@ -6447,11 +6447,11 @@ width: 100%;
     }
 
 	.service-body .icon-box{
-        margin-bottom: 30px;
+        margin-bottom: 0px;
     }
 
 	.service-body .icon-box img{
-		max-width: 40px;
+		max-width: 65px;
 	}
 
 	.service-content-info h3{
@@ -6535,7 +6535,7 @@ width: 100%;
     }
 
 	.fact-counter-item h2{
-        font-size: 28px;
+        font-size: 17px;
     }
 
 	.fact-counter-item p{
@@ -6639,6 +6639,7 @@ width: 100%;
 
 	.faqs-contact-item-box{
 		padding: 15px;
+		    gap: 25px;
 	}
 
 	.faq-accordion .accordion-header .accordion-button{
