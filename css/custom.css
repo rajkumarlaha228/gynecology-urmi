@@ -5170,7 +5170,7 @@ width: 100%;
     }
 
 	.navbar{
-		padding: 15px 0;
+		padding: 2px 0;
 	}
 
 	.slicknav_nav li,
@@ -6308,6 +6308,9 @@ width: 100%;
 		margin-bottom: 30px;
 	}
 
+	img.logo {
+    width: 108px;
+}
 	.section-title h1{
 		font-size: 30px;
 	}
