@@ -1,7 +1,7 @@
 
 
 :root{
-	--primary-color				: #114c47;
+	--primary-color				: #10534d;
 	--secondary-color			: #eaf5f4;
 	--text-color				: #666666;
 	--accent-color				: #FF70A3;
@@ -442,7 +442,8 @@ body{
 	width: 100%;
 	max-width: 1480px;
 	margin: 0 auto;
-	padding: 15px 0;
+    padding-bottom: 5px;
+    padding-top: 8px;
 }
 
 .topbar .container-fluid{
@@ -1420,13 +1421,13 @@ img.logo {
 
 .service-body .icon-box img{
 	width: 100%;
-	max-width: 50px;
+	max-width: 74px;
 	transition: all 0.4s ease-in-out;
 }
 
 .service-item.active .service-body .icon-box img,
 .service-item:hover .service-body .icon-box img{
-	filter: brightness(0) invert(1);
+	display: none;
 }
 
 .service-content{
@@ -1820,7 +1821,7 @@ width: 100%;
 }
 
 .why-choose-item h2{
-	font-size: 48px;
+	font-size: 30px;
 	margin-bottom: 20px;
 }
 
@@ -6309,7 +6310,7 @@ width: 100%;
 	}
 
 	img.logo {
-    width: 108px;
+    width: 115px;
 }
 	.section-title h1{
 		font-size: 30px;
