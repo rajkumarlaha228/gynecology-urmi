@@ -27,6 +27,13 @@
 			$("header .header-sticky").toggleClass("active", (fromTop > 600));
 		});
 	}	
+
+	function updateStickyHeaderAppearance(){
+		$("header.main-header").toggleClass("is-scrolled", $window.scrollTop() > 0);
+	}
+
+	$window.on("scroll", updateStickyHeaderAppearance);
+	updateStickyHeaderAppearance();
 	
 	/* Slick Menu JS */
 	$('#menu').slicknav({

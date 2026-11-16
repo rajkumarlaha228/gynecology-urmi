@@ -530,8 +530,14 @@ body {
 }
 
 header.main-header {
-	position: relative;
+	position: sticky;
+	top: 0;
 	z-index: 100;
+	transition: background-color 0.3s ease-in-out;
+}
+
+header.main-header.is-scrolled {
+	background-color: #10534d;
 }
 
 header.main-header .container-fluid {
@@ -1255,7 +1261,7 @@ img.logo {
 	background: var(--accent-color);
 	border-radius: 10px;
 	padding: 20px;
-	max-width: 178px;
+	max-width: 210px;
 	animation: experiencemoveobject 2s infinite linear alternate;
 }
 
@@ -1274,7 +1280,7 @@ img.logo {
 }
 
 .about-experience-box .about-experience-content h3 {
-	font-size: 20px;
+	font-size: 16px;
 	line-height: 1.3em;
 	font-weight: 600;
 	color: var(--white-color);
@@ -2135,8 +2141,11 @@ img.logo {
 	font-size: 15px;
 }
 
+header.main-header.is-scrolled img {
+    width: 120px;
+}
 .cta-box {
-	background: linear-gradient(270deg, rgba(32, 41, 110, 0) -129% -129%, #114c47ec 90%), url(../images/bg-img.jpeg) no-repeat;
+	background: linear-gradient(270deg, rgba(32, 41, 110, 0) -129% -129%, #114c47ec 90%), url(../images/bg-img.png) no-repeat;
 	background-position: center center;
 	background-size: cover;
 	padding: 100px 0;
