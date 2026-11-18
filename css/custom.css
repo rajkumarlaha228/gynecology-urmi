@@ -531,7 +531,7 @@ body {
 
 header.main-header {
 	position: sticky;
-	top: 0;
+	top: -4px;
 	z-index: 100;
 	transition: background-color 0.3s ease-in-out;
 }
@@ -5308,7 +5308,7 @@ article.spe-area-card p strong {
 	}
 
 	.hero.hero-slider-layout .hero-slide {
-		padding: 160px 0 80px;
+		padding: 100px 0 45px;
 	}
 
 	.hero.hero-slider-layout .hero-pagination {
@@ -6386,7 +6386,7 @@ article.spe-area-card p strong {
 	}
 
 	.section-title h1 {
-		font-size: 30px;
+		font-size: 27px;
 	}
 
 	.section-title h2 {
@@ -7111,4 +7111,245 @@ article.spe-area-card p strong {
 }
 .surgery-box img {
     max-width: 75px;
+}
+
+
+
+/* Contact List */
+.fact-list.new ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.fact-list.new ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    position: relative;
+    padding: 5px 0 5px 30px;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+/* Check Icon */
+.fact-list.new ul li:before {
+    content: '\f058';
+    position: absolute;
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    font-size: 18px;
+    color: var(--accent-color);
+    left: 0;
+    top: 7px;
+}
+
+/* Contact Label */
+.fact-list.new .fact-label {
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+/* Contact Links */
+.fact-list.new .contact-links {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-left: auto;
+}
+
+/* WhatsApp Icon */
+.fact-list.new .emg-call {
+    text-decoration: none;
+}
+
+.fact-list.new .emg-call i {
+    width: 35px;
+    height: 35px;
+    color: #1eba59;
+    border: 1px solid #1eba59;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #b3ffd0;
+    font-size: 17px;
+    animation: callBlink 1.5s infinite;
+}
+
+/* Phone Link */
+.fact-list.new .phone-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #1eba59;
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.fact-list.new .phone-link i {
+    font-size: 14px;
+}
+
+/* Pulse Animation */
+@keyframes callBlink {
+    0% {
+        box-shadow: 0 0 0 0 rgba(30, 186, 89, 0.6);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(30, 186, 89, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(30, 186, 89, 0);
+    }
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+    .fact-list.new ul li {
+        gap: 10px;
+        font-size: 14px;
+    }
+
+    .fact-list.new .contact-links {
+        gap: 8px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .fact-list.new ul li {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 8px;
+        padding-left: 27px;
+        margin-bottom: 15px;
+    }
+.fact-list.new ul li:before {
+    content: '\f058';
+    position: absolute;
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    font-size: 16px;
+    color: var(--accent-color);
+    left: 0;
+    top: 4px;
+}
+    .fact-list.new .contact-links {
+        margin-left: 0;
+        width: 100%;
+        gap: 12px;
+    }
+
+    .fact-list.new .fact-label {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .fact-list.new .phone-link {
+        font-size: 14px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .fact-list.new ul li {
+        font-size: 13px;
+    }
+
+    .fact-list.new .emg-call i {
+        width: 32px;
+        height: 32px;
+        font-size: 15px;
+    }
+
+    .fact-list.new .phone-link {
+        font-size: 13px;
+        gap: 6px;
+    }
+}
+
+
+
+.gmb-acount {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 28px 0;
+    border-top: 1px solid #d1d1d1;
+    margin-top: 32px;
+}
+
+.gmb-icon {
+    width: 55px;
+    height: 55px;
+    min-width: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f5f7fa;
+    border-radius: 50%;
+    font-size: 27px;
+    color: #4285F4;
+}
+
+.gmb-content h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 5px;
+    color: #10534d;
+}
+.fact-counter-item p {
+    font-size: 15px;
+}
+.gmb-content p {
+    font-size: 14px;
+    margin: 0 0 10px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.gmb-link {
+display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #25bd5f;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.gmb-link:hover {
+    color: #25bd5f;
+    gap: 11px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 576px) {
+    .gmb-acount {
+        padding: 15px;
+        gap: 12px;
+    }
+
+    .gmb-icon {
+        width: 45px;
+        height: 45px;
+        min-width: 45px;
+        font-size: 23px;
+    }
+
+    .gmb-content h4 {
+        font-size: 15px;
+    }
+
+    .gmb-content p {
+        font-size: 12px;
+    }
+
+    .gmb-link {
+        font-size: 12px;
+    }
 }
